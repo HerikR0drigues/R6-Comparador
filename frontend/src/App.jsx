@@ -23,8 +23,8 @@ function App() {
 
     try {
       const [firstResponse, secondResponse] = await Promise.all([
-        axios.get(`http://localhost:5000/api/avg-kills/${firstNick}?platform=${firstPlat}`),
-        axios.get(`http://localhost:5000/api/avg-kills/${secondNick}?platform=${secondPlat}`)
+        axios.get(`https://r6-comparador.onrender.com/api/avg-kills/${firstNick}?platform=${firstPlat}`),
+        axios.get(`https://r6-comparador.onrender.com/api/avg-kills/${secondNick}?platform=${secondPlat}`)
       ]);
 
       // Converte os valores de avgKills para números
